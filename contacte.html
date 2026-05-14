@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ca">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacte — Jordan Roig López</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <div class="navbar-container">
+        <div class="navbar-brand">
+          <span class="brand-text">jordan_roig</span>
+          <span class="brand-slash">/</span>
+          <span class="brand-context">ipop</span>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="perfil.html" class="nav-link">Perfil</a></li>
+          <li><a href="projeccio.html" class="nav-link">Projecció</a></li>
+          <li><a href="contacte.html" class="nav-link active">Contacte</a></li>
+          <li>
+            <a href="./assets/cv.pdf" class="nav-link nav-cv" download>
+              CV_PDF
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main class="main-content">
+      <!-- Page Header -->
+      <section class="hero">
+        <div class="hero-container">
+          <div class="hero-label">Connexió Professional</div>
+          <h1 class="hero-title">Parlarem demà_</h1>
+          <p class="hero-subtitle">
+            Estic obert a noves oportunitats, col·laboracions i conversations sobre arquitectura de sistemes i IA.
+          </p>
+        </div>
+      </section>
+
+      <!-- Contact Info -->
+      <section class="section">
+        <div class="section-container">
+          <div class="section-header">
+            <h2 class="section-title">Informació de Contacte</h2>
+            <div class="section-accent"></div>
+          </div>
+
+          <div class="grid-2">
+            <div class="contact-method">
+              <div class="contact-method-header">
+                <span class="contact-icon">✉</span>
+                <h3>Email</h3>
+              </div>
+              <p class="contact-value">
+                <a href="mailto:jordan.roig@example.com" class="contact-link">
+                  jordan.roig@example.com
+                </a>
+              </p>
+              <p class="contact-note">Resposta en 24-48 hores</p>
+            </div>
+
+            <div class="contact-method">
+              <div class="contact-method-header">
+                <span class="contact-icon">⚙</span>
+                <h3>Professional Networks</h3>
+              </div>
+              <div class="social-links">
+                <a href="https://github.com/ROIGy" target="_blank" class="social-link">GitHub</a>
+                <a href="https://linkedin.com/in/jordanroig" target="_blank" class="social-link">LinkedIn</a>
+              </div>
+              <p class="contact-note">Accessibles 24/7</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Form -->
+      <section class="section section-alternate">
+        <div class="section-container">
+          <div class="section-header">
+            <h2 class="section-title">Formulari de Contacte</h2>
+            <div class="section-accent"></div>
+          </div>
+
+          <div class="form-wrapper">
+            <form class="contact-form" id="contactForm">
+              <div class="form-group">
+                <label for="name" class="form-label">Nom</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="El teu nom complet"
+                  required
+                  class="form-input"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="email" class="form-label">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="email@example.com"
+                  required
+                  class="form-input"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="subject" class="form-label">Assumpte</label>
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  placeholder="Tema del missatge"
+                  required
+                  class="form-input"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="message" class="form-label">Missatge</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="6"
+                  placeholder="Escriu el teu missatge aquí..."
+                  required
+                  class="form-input form-textarea"
+                ></textarea>
+              </div>
+
+              <div class="form-actions">
+                <button type="submit" class="btn btn-primary">Enviar Missatge</button>
+                <p class="form-note">
+                  <span class="monospace">// Formulari en fase beta — resposta manual</span>
+                </p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- Collaboration Types -->
+      <section class="section">
+        <div class="section-container">
+          <div class="section-header">
+            <h2 class="section-title">Tipus de Col·laboració</h2>
+            <div class="section-accent"></div>
+          </div>
+
+          <div class="grid-3">
+            <div class="collab-card">
+              <span class="collab-icon">🚀</span>
+              <h3>Oportunitats Laborals</h3>
+              <p>
+                Sóc obert a posicions de <strong>Developer</strong>, <strong>AI Engineer</strong>
+                o <strong>Tech Lead</strong> en scaleups i empreses tech.
+              </p>
+            </div>
+
+            <div class="collab-card">
+              <span class="collab-icon">🤝</span>
+              <h3>Projectes & Partnerships</h3>
+              <p>
+                Interessat en col·laborar en projectes open source o iniciatives de democratització tecnològica.
+              </p>
+            </div>
+
+            <div class="collab-card">
+              <span class="collab-icon">💡</span>
+              <h3>Mentoría & Conseils</h3>
+              <p>
+                Dispòs a compartir experiència sobre carrera tech, aprenentatge i desarrollo professional.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Privacy Notice -->
+      <section class="section section-alternate">
+        <div class="section-container">
+          <div class="privacy-notice">
+            <h3>Privacitat i Seguretat</h3>
+            <p>
+              Aquesta web i els seus formularis <strong>no recopilen dades personals més allà del necessari</strong> per a contacte directe.
+              Cap número de telèfon ni adreça física. Tot contacte es gestiona de manera confidencial.
+            </p>
+            <p>
+              Si prefereixos contactar-me de manera privada o tens qüestions sobre privacitat, no dubtes en escriure directament a
+              <strong>jordan.roig@example.com</strong>.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <p class="footer-text">IPOP — Quadern viu en revisió constant</p>
+        <p class="footer-meta">© 2026 Jordan Roig López · Darrera actualització: 15/05/2026</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

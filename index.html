@@ -1,60 +1,169 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ca">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>IPOP Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Jordan Roig López — Arquitectura de Sistemes & IA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header class="hero">
-      <h1>IPOP &mdash; Professional Orientation Report</h1>
-      <p>Jordan Roig L&oacute;pez</p>
-    </header>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <div class="navbar-container">
+        <div class="navbar-brand">
+          <span class="brand-text">jordan_roig</span>
+          <span class="brand-slash">/</span>
+          <span class="brand-context">ipop</span>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="perfil.html" class="nav-link">Perfil</a></li>
+          <li><a href="projeccio.html" class="nav-link">Projecció</a></li>
+          <li><a href="contacte.html" class="nav-link">Contacte</a></li>
+          <li>
+            <a href="./assets/cv.pdf" class="nav-link nav-cv" download>
+              CV_PDF
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
-    <main>
-      <section id="academic-profile">
-        <h2>Academic Profile (EQF 5/6)</h2>
-        <p>Summary of current training, competencies, and academic progress.</p>
+    <main class="main-content">
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="hero-container">
+          <div class="hero-label">Arquitectura {IA}</div>
+          <h1 class="hero-title">Desenvolupant el futur_</h1>
+          <p class="hero-subtitle">
+            Professional en transformació digital. Especialista en sistemes escalables, inteligència artificial i lideratge tècnic.
+          </p>
+        </div>
       </section>
 
-      <section id="technical-stack">
-        <h2>Technical Stack</h2>
-        <p>Overview of the technologies, tools, and methods developed so far.</p>
+      <!-- Objectiu Professional -->
+      <section class="section">
+        <div class="section-container">
+          <div class="section-header">
+            <h2 class="section-title">Objectiu Professional</h2>
+            <div class="section-accent"></div>
+          </div>
+
+          <div class="grid-2">
+            <div class="card">
+              <div class="card-header">
+                <span class="card-icon">◆</span>
+                <h3>Especialització</h3>
+              </div>
+              <p>
+                Desenvolupar i implementar solucions en <strong>Arquitectura de Sistemes</strong> amb focus en Inteligència Artificial per a mercats internacionals.
+              </p>
+            </div>
+
+            <div class="card">
+              <div class="card-header">
+                <span class="card-icon">◆</span>
+                <h3>Mercat Objectiu</h3>
+              </div>
+              <p>
+                Posicionar-me com a referent técnic en ecosistemes tech de <strong>Irlanda, Alemanya i Estats Units</strong>.
+              </p>
+            </div>
+
+            <div class="card">
+              <div class="card-header">
+                <span class="card-icon">◆</span>
+                <h3>Interessos Culturals</h3>
+              </div>
+              <p>
+                Democratitzar la tecnologia al mercat hispanoparlant. Impulsar una cultura d'esforç continu i solucions basades en IA per a problemes reals.
+              </p>
+            </div>
+
+            <div class="card">
+              <div class="card-header">
+                <span class="card-icon">◆</span>
+                <h3>Rol de Futur</h3>
+              </div>
+              <p>
+                <strong>Senior Architect</strong> o <strong>AI Solutions Lead</strong> en organitzacions de scaling global. Lideratge tècnic amb impacte estratègic.
+              </p>
+            </div>
+          </div>
+        </div>
       </section>
 
-      <section id="professional-experience">
-        <h2>Professional Experience</h2>
-        <p>Highlights of internships, projects, and relevant professional practice.</p>
+      <!-- Valors i Competencies -->
+      <section class="section section-alternate">
+        <div class="section-container">
+          <div class="section-header">
+            <h2 class="section-title">Fortaleses Clau</h2>
+            <div class="section-accent"></div>
+          </div>
+
+          <div class="competencies">
+            <div class="competency-group">
+              <h3 class="competency-title">Idiomes i Comunicació</h3>
+              <div class="competency-list">
+                <span class="badge">Català C1</span>
+                <span class="badge">Castellà C1</span>
+                <span class="badge">Anglès B2/C1</span>
+                <span class="badge">Comunicació Tècnica</span>
+              </div>
+            </div>
+
+            <div class="competency-group">
+              <h3 class="competency-title">Soft Skills</h3>
+              <div class="competency-list">
+                <span class="badge">Lideratge Tècnic</span>
+                <span class="badge">Pensament Estratègic</span>
+                <span class="badge">Adaptabilitat</span>
+                <span class="badge">Resolució de Problemes</span>
+              </div>
+            </div>
+
+            <div class="competency-group">
+              <h3 class="competency-title">Mentalitat</h3>
+              <div class="competency-list">
+                <span class="badge">Out-of-the-box Thinking</span>
+                <span class="badge">Aprenentatge Continu</span>
+                <span class="badge">Visió Internacional</span>
+                <span class="badge">Cultura d'Esforç</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
-      <section id="future-roadmap">
-        <h2>Future Roadmap</h2>
-        <p>Goals for specialization, learning milestones, and career direction.</p>
-      </section>
-
-      <section id="contact">
-        <h2 id="contact-title">Contact</h2>
-        <form action="#" aria-labelledby="contact-title" aria-describedby="contact-form-note">
-          <small id="contact-form-note">This form is a static placeholder.</small>
-
-          <label for="name">Name</label>
-          <input id="name" name="name" type="text" required />
-
-          <label for="email">Email</label>
-          <input id="email" name="email" type="email" required />
-
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="4" required></textarea>
-
-          <button type="submit">Send</button>
-        </form>
-        <p>Download CV (coming soon)</p>
+      <!-- Call to Action -->
+      <section class="section">
+        <div class="section-container">
+          <div class="cta">
+            <h2>Connec-te amb la meva trajectòria</h2>
+            <p>Explora el meu perfil professional, objectius de carrera i plans de desenvolupament.</p>
+            <div class="cta-buttons">
+              <a href="perfil.html" class="btn btn-primary">Veure Perfil Complet</a>
+              <a href="projeccio.html" class="btn btn-secondary">Pla de Futur</a>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
 
-    <footer>
-      <p>This is a Living Document for professional orientation.</p>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <p class="footer-text">IPOP — Quadern viu en revisió constant</p>
+        <p class="footer-meta">© 2026 Jordan Roig López · Darrera actualització: 15/05/2026</p>
+      </div>
     </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
