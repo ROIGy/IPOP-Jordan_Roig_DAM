@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 
-  // Handle contact form submission
+  // Handle contact form submission with Formspree
   const contactForm = document.getElementById('contactForm');
   if (contactForm) {
     contactForm.addEventListener('submit', handleFormSubmit);
@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 /**
- * Handle contact form submission
+ * Handle contact form submission with Formspree
  */
 function handleFormSubmit(e) {
   e.preventDefault();
@@ -50,23 +50,30 @@ function handleFormSubmit(e) {
     return;
   }
 
-  // Log submission (in a real app, would send to server)
-  console.log('Form submitted:', {
-    name,
-    email,
-    subject: subject || '(sense assumpte)',
-    message,
-    timestamp: new Date().toISOString(),
-  });
-
-  // Show success notification
-  showNotification(
-    '✓ Missatge enviat correctament. Respostre aviat.',
-    'success'
-  );
-
-  // Reset form
-  form.reset();
+  // Send via Formspree using fetch (no redirect)
+  fetch(form.action, {
+    method: 'POST',
+    body: formData,
+    headers: {
+      Accept: 'application/json',
+    },
+  })
+    .then((response) => {
+      if (response.ok) {
+        showNotification(
+          '✓ Missatge enviat correctament. Rebràs una resposta aviat.',
+          'success'
+        );
+        form.reset();
+        console.log('Email sent successfully to jordanroig23@gmail.com');
+      } else {
+        showNotification('Error al enviar. Intenta-ho més tard.', 'error');
+      }
+    })
+    .catch((error) => {
+      console.error('Error:', error);
+      showNotification('Error de connexió. Verifica la teva connexió.', 'error');
+    });
 }
 
 /**
