@@ -497,6 +497,81 @@ a {
 }
 
 /* ==========================================
+   PROJECTS SECTION
+   ========================================== */
+
+.projects-section {
+  margin-top: var(--spacing-xl);
+  padding-top: var(--spacing-xl);
+  border-top: 1px solid var(--color-border);
+}
+
+.projects-header {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  margin-bottom: var(--spacing-lg);
+  letter-spacing: 0.5px;
+}
+
+.project-item {
+  margin-bottom: var(--spacing-lg);
+  padding: var(--spacing-md);
+  background-color: rgba(167, 139, 250, 0.08);
+  border-left: 3px solid var(--color-accent-primary);
+  border-radius: var(--radius-sm);
+}
+
+.project-item:last-child {
+  margin-bottom: 0;
+}
+
+.project-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #be94f5;
+  margin-bottom: var(--spacing-sm);
+  letter-spacing: 0.3px;
+}
+
+.project-description {
+  color: var(--color-text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: var(--spacing-md);
+}
+
+.project-links {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  flex-wrap: wrap;
+}
+
+.project-link {
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--color-accent-primary);
+  border: 1px solid rgba(167, 139, 250, 0.3);
+  padding: 0.3rem 0.7rem;
+  border-radius: var(--radius-sm);
+  transition: all var(--transition-fast);
+  cursor: pointer;
+}
+
+.project-link:hover {
+  background-color: rgba(167, 139, 250, 0.15);
+  border-color: var(--color-accent-primary);
+  color: #be94f5;
+}
+
+.link-separator {
+  color: var(--color-text-tertiary);
+  font-weight: 300;
+}
+
+/* ==========================================
    TECHNOLOGY CARDS
    ========================================== */
 
